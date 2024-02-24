@@ -1,0 +1,190 @@
+/* content.css */
+header {
+    background-color: #1a1a1a;
+    color: #efefef;
+    padding: 20px;
+    text-align: center;
+}
+/* Navigation bar */
+nav {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none; /* Remove the underline from links */
+
+}
+nav ul li a {
+   color: #17112b;
+}
+nav ul li a:hover {
+    padding: 1%;
+    background: #1a1a1a;
+    color: #bebaca;
+ }
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-link {
+    display: block;
+    width: 30%;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+}
+
+/* Image Rollover Effect */
+.gallery-image:hover {
+    opacity: 0.7; /* Reduce opacity on hover */
+}
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Ordered and Unordered Lists */
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+/* General Formatting */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+section {
+    width: 80%;
+}
+
+aside {
+    width: 20%;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #efefef;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Hyperlink Styles */
+aside a {
+    display: block; /* Display the links as block elements to take full width */
+    padding: 10px 0; /* Add padding to create some space around the links */
+    color: #333; /* Set the text color of the links */
+}
+
+a:hover {
+    background-color: #f2f2f2; /* Change background color on hover */
+    color: #000; /* Change text color on hover */
+}
+
+/* Contact Form */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+aside h2, p{
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Media Query for Tablet and Mobile */
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section, aside {
+        width: 100%;
+        max-width: none;
+    }
+
+    main, .image-gallery{
+        display: block;
+    }
+    .image-link {
+        width: 100%;
+    }
+}
